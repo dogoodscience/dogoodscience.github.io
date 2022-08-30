@@ -1,0 +1,681 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-TW" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/Mycena.icon.png">
+  <link rel="icon" href="/img/Mycena.icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Jason Tsai">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="genomics in Taiwan is twisted.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="淺談基因體學研究及核心">
+<meta property="og:url" content="http://example.com/2017/09/02/genomicscoreskills/index.html">
+<meta property="og:site_name" content="Do good science">
+<meta property="og:description" content="genomics in Taiwan is twisted.">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://example.com/img/20170825-DSC_0420.jpg">
+<meta property="article:published_time" content="2017-09-02T10:26:28.000Z">
+<meta property="article:modified_time" content="2022-08-29T23:38:36.786Z">
+<meta property="article:author" content="Jason Tsai">
+<meta property="article:tag" content="實驗室">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/20170825-DSC_0420.jpg">
+  
+  
+  
+  <title>淺談基因體學研究及核心 - Do good science</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Do good science</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首頁
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                歸檔
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分類
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                標籤
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                關於
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/20170825-DSC_0420.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="淺談基因體學研究及核心"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2017-09-02 18:26" pubdate>
+          2017年9月2日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.5k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          38 分鐘
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">淺談基因體學研究及核心</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>因為自己也還在探索的路程上，也可能哪邊定義有瑕疵，這一篇會一直被持續修改及更新。</p>
+<p> [v1. 2017.09.01 - 初稿完成; 預計放進更多references , examples 跟NGS]<br> [v2. 2017.09.24 - added Metagenomics scenario]</p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>繼上一篇 <a href="/2015/10/29/genomicstwistedintw/">做基因體的沒有在做基因體</a> 的之後，2015年下學期也開了一堂 <a target="_blank" rel="noopener" href="http://2015ngsintro.readthedocs.io/en/latest/">次世代定序：理論及方法</a> 之後，對實驗室有興趣的學生或是助理大部份都是因為想學相關分析但是不太知道是哪方面的，我其實一直在思考所謂基因體學的核心到底是什麼，甚至是現在的生物學需要什麼。</p>
+<p>這不只是以自身的經驗覺得實驗室本身的定位在哪裡，自己要怎麼前進，然後最重要的是自己定義對了，才能找到興趣相同的學生系統化地訓練讓他們前進。</p>
+<p>因為<strong>基因體學顧名思義就是任何對基因體的研究，而基因體本質上就是遺傳物質的傳播、運作、交互作用，調控、及功能等等</strong>。這樣聽起來很籠統沒錯，因爲基因體本身就是所有生物的藍圖。</p>
+<p>所以各大學研究機構就有弔詭的基因體這個，基因體那個單位。某一方面改名的原因是包含著科學方法的進步或是時代經驗的累積，或是PI們對自己的研究們一起的一個定位（在此基礎下一起奮鬥在國內國際上發光發聲），或是任務上的導向（我們XX就是在做XX研究解決XX問題）。但是某一方面也是用新的名字包裝起來學生比較容易受到吸引<del>雖然沒有相關老師？</del>。然後學生進去之後其實發現就跟之前的動物植物 &#x3D; 生命科學 &#x3D; 基因 &#x3D; 基因體 &#x3D; 生物科技所等等方法說不定其實沒什麼兩樣。改名風潮這個議題 顏聖紘老師 已經有<a target="_blank" rel="noopener" href="https://opinion.udn.com/opinion/story/7492/1838547">相關文章</a> [ref1]。全世界的生物系所其實也都做同樣的事。</p>
+<p>更甚之也是因為經費導向，有這一方面的取得比較容易。以最近的趨勢來說，我們未來說不定會看到<strong>大數據神經生命基因體蛋白體醫學基本應用AI多樣性科技科學中心</strong>，簡稱：</p>
+<p><img src="/img/center.png" srcset="/img/loading.gif" lazyload alt="拿到經費率87%"></p>
+<h3 id="基因體學是什麼？"><a href="#基因體學是什麼？" class="headerlink" title="基因體學是什麼？"></a><strong>基因體學是什麼？</strong></h3><p>我自己覺得<strong>如果基因體算是每個物種的說明書，而基因體學就是如何印出這一本說明書，跟怎麼搞懂這一本說明書。</strong>我覺得可以把它想成一個研究方法的流程，而每一段都有它需要的相關知識及細節。我舉一下通常會用的幾個例子：</p>
+<ol>
+<li><p>實驗室 A 從事某病原真菌的相關研究已有好幾年  (ecology; molecular biology)，對此真菌的型態、環境都很熟悉並已經建立出分生實驗的SOP 。近年來NGS的大眾化，想要定序此真菌的基因體，進行**組裝 (genome assembly)<strong>，再來做相關的</strong>基因註解 (gene annotation)**。實驗室有好幾個phenotype不同的isolates 想要確定它遺傳上的差異 **(resequencing ; 群體基因體學 population genomics)<strong>。基因體註解完之後想知道它跟型態相近的真菌在基因體層次上有什麼不一樣</strong>(比較基因體學 comparative genomics)<strong>，也想看它養在不同培養基上的條件有哪些基因有表現</strong>(轉錄體學 transcriptomics)**。因為最近在台灣不同地方疾病疫情擴大，想要定序從不同樣區收集到的50個 菌株 採取定序並找出發源地 **(流行病學 epidemiology ; 親緣關係學 phylogenetics )**。</p>
+</li>
+<li><p>實驗室 A-2 從事某植物研究且已經有發表 genome, 目前定序不同的樣本 (accession) 用 <strong>GWAS, population differentiation</strong>, 看phenotype 與 genotype  的相連性。因為已經建立出雜交的系統，嘗試用 <strong>linkage mapping (eQTL)</strong> 去找出對應某表現型的基因。</p>
+</li>
+<li><p>在人類基因體圖譜已經發表了十幾年，也陸續有不同的群體被定序：不同國家的人、不同疾病、同一個癌症但不同stage等等等。 實驗室 B 除了分析現有的資料的一些遺傳（population genomics) 並想去看他與不同資料的相連性 <strong>(statistics ;</strong> <strong>資訊工程</strong> <strong>computer science)</strong> 。基於大部分的資料都是歐洲或大陸的，最近想要跟相關醫學機構合作看能不能定序並建立起台灣人本身的基因體資料庫 **(resequencing ; population genomics ; computer science)**。</p>
+</li>
+<li><p>實驗室 C 專注於上述兩個範例的某幾個步驟開發演算法的進步跟新的軟體 (statistics ; computer  science)，讓實驗室 A 和 B  或是全世界在執行某一個步驟時除了更省時，更精確，也可以在軟體開發的過程中比其他實驗室發現新的不同現象並加與研究。</p>
+</li>
+<li><p>實驗室 D 跟實驗室C 類似，不過是在實驗上的步驟改進 (molecular biology)，通才是在模式物種上建立出新的實驗SOP，如單一細胞的表現量 (single cell expression)，來找出生物更深一層的機制。</p>
+</li>
+<li><p>實驗室 E 從上述三個實驗室的發現想要做進一步的實驗驗證 (molecular biology ; proteomics ; etc  etc) 並走下一步的應用 (pharmacogenomics ; molecular biology ; funding ;  marketing etc)。舉例來說，選實驗室B的成果以相對低成本但高準確率的RT-PCR達到某一族群某某疾病的風險偵測（precision  medicine)</p>
+</li>
+<li><p><del>實驗室 F 什麼都不太會，但是靠著PI寫實驗室 A, B, C, D, E的模式湊一湊寫出一個驚天指標計畫書 + 天時地利人和及不可考的原因拿到一筆超級大的經費，需要做相關的基因體研究。</del></p>
+</li>
+<li><p>實驗室G 想要知道不同環境中有什麼微生物 (<strong>總體基因體學; metagenomics</strong>)，可能是空污、海洋、住家、物種的不同部位如腸道等等等。因為定序越來越便宜，現在可以 1) 找出它們是什麼，然後看2)菌向的豐富度  (abundance)。目前這是一個很夯的領域（<strong>微生物生態學; microbial ecology</strong>)，不只是因為很多環境有什麼生物還處於太多未知的狀態下，甚至以前很多人想做但現在才可以開始探討的是很有潛力的：如腸道菌對人類或是畜牧動物、或是菌根菌對植物或是農作物的的健康跟產量的交互作用。</p>
+</li>
+<li><p><del>實驗室H 看到這領域那麼夯，趕快花大錢外包給公司作實驗發了一兩篇paper，儼然是此領域的專家然後用槓桿原理去開公司去賣專利等等。</del></p>
+</li>
+</ol>
+<p>請對號入座（誤)。 </p>
+<p>上述每一個粗體的文字都算是一個學門專業。實驗室 A 像是把所有現有的基礎知識整合起來再重新整理。實驗室 B 是實驗室 A 整理之後的知識加與延伸並擴大取樣並萃取更多的知識。實驗室 C 與 D 像是生物資訊跟分生實驗室。實驗室 E 走應用。<del>實驗室 F 全世界哪裡都有。</del>看到這邊，你會發現其實很多實驗室多多少少都會跟上述的例子有點相關。 把真菌換成鳥或是昆蟲一下子就變成生態基因體學  (Ecological genomics) ，<del>換成熊貓或是藍鵲就變成國家型指標基因體計畫，</del>換成 海洋的細菌就變成 海洋資源或是微生物生態學 等等。 </p>
+<p>我覺得基因體學算是一個龐大學門，但它的核心跟分析的方法藏在所有生物學 (Biology) 中。 某一方面它也只是整個研究上的一個補助方法，更不然它只是某些人是幾年前申請經費的關鍵字（目前是AI、大數據) 而已。</p>
+<p>我個人覺得無所謂方法。除了實驗室 F跟H ,  只要不愧對納稅人的錢，其實還不是都一樣, 都是研究生物學的實驗室而已。而且講什麼領域其實都沒差，都還不是比不上數學（咦)</p>
+<p><img src="/img/purity.png" srcset="/img/loading.gif" lazyload alt="https://xkcd.com/435/"></p>
+<h3 id="基因體學的核心"><a href="#基因體學的核心" class="headerlink" title="基因體學的核心"></a><strong>基因體學的核心</strong></h3><p>每一個人對基因體的看法都不一樣。學生就想走相關的領域選課時也是霧煞煞。簡化下來，在這邊我舉我個人認為三大項</p>
+<ol>
+<li><strong>演化學 (Evolutionary Biology)</strong></li>
+</ol>
+<p>在分析中你需要做很多的比較。你需要知道物種之間的差異。找到了差異，如何量化？哪些是有意義的？意義如何定義？你需要知道它從何而來及它為什麼而來。而演化學就是建立架構跟探討這些問題的根本基礎。有些演化學課可以是很生動（哪個生物不生動），不過希望最好學到一些 phylogenetics, population genetics 的原理及實際操作。</p>
+<figure>   <img src="/img/Ithink.png" srcset="/img/loading.gif" lazyload alt="descent with modifications" style="width:50%" >   <figcaption>descent with modifications </figcaption>
+
+
+
+<ol start="2">
+<li><strong>程式語言與統計</strong></li>
+</ol>
+<p>有了寫程式語言的能力，你才有所謂的一雙手去開始處理跟分析。開始寫程式語言，才會開始碰觸到不管哪邊都很重要的邏輯。不是說生物學課程就沒有邏輯，而是一開始就有太多表象要讀要背，而開始作實作的時候都已經很晚了。這包括對資料結構的了解（整理，篩選)。而真正的分析 (statistics, computer science) 則需要有統計的思考。能把事情簡化而不是簡單化。machine  learning、network analysis、python、R 都很粗糙的總結在這一方面。</p>
+<ol start="3">
+<li><strong>溝通能力與EQ</strong></li>
+</ol>
+<p>其實很多細節或是分析方式嚴格來說可以放進前兩項。想了很久，後來列了這一項。<strong>這包括語文能力+耐心+滿滿的大愛+正面思考。</strong>做了再多的研究不是自己爽的。要回饋社會，不論是在收集資料、探討現象、發表上、訓練學生、合作計畫、真正應用等等，語言的專業度某方面來說比前兩項還重要（攤手）。 基因體學有時候還會影響到整個政府跟產業之後的計畫，所以怎麼仔細溝通出正確的資訊真的很重要 [ref2]</p>
+<p>台灣經費整個算少沒有一個好的淘汰的機制或是整個定義的大混亂或是不同領域的不了解，變成領域上的互相攻擊：<a target="_blank" rel="noopener" href="http://www.storm.mg/article/323668">你應該去這個領域而不是我們這個領域</a> [ref3]、你年紀比我小請乖乖等、我不認識你你算哪隻、你的物種比我的物種爛、實驗室A,B,D 說 C 都需要它們產出 data 不夠獨立、C 覺得 A,B,D  還不是什麼都不懂、實驗室E太燒錢說不定只是嘴砲、做基因體的不是生物多樣性等等等。有點可惜。你需要的是抱持你的專業程度，而不要流入口水戰中。</p>
+<h3 id="結語"><a href="#結語" class="headerlink" title="結語"></a><strong>結語</strong></h3><p>就這些核心能力定下基礎後，學的越深，越會發現解決一個問題需要多方面的技術，或是不同問題其實只是一個問題而已。跨領域的初衷是對的。</p>
+<p> 天下武學，殊途同歸，強分派別，乃是人為。<del>寫這麼多就是想寫這一句好中二</del></p>
+<figure>   <img src="/img/all_i_see_are_equations.png" srcset="/img/loading.gif" lazyload alt="現象跟之後的原理 http://abstrusegoose.com/275" style="width:50%" >   <figcaption>現象跟之後的原理 http://abstrusegoose.com/275 </figcaption>
+
+
+
+<p>不過到那個地步之前，學生怎麼系統化的開始？ 全世界不同大學有開始討論並加以嘗試 [ref 4] 。因為需要備課，自己實驗室有一個網路課程滿滿的清單。未來會慢慢整理放上去。不過我可以推薦從這邊開始：<a target="_blank" rel="noopener" href="http://rafalab.github.io/pages/harvardx.html">哈佛的  Data Analysis for the Life Sciences series, the Genomics Data Analysis  series, and the Using Python for Research course  三個線上課程所有資料</a></p>
+<p> 我們在這個時代是應該開心的。太多新奇的事物等待我們去探索去研究去解決。希望在這段路程，讓經費可以給真正有在用的實驗室跟回歸到學生。</p>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://opinion.udn.com/opinion/story/7492/1838547">念生科系CP值低是因為系很爛？統計沒意義？還是誤上賊船？</a> 顏聖紘 </li>
+<li><a target="_blank" rel="noopener" href="http://pansci.asia/archives/27710">全球化視野下的基因體學</a> pansci</li>
+<li><a target="_blank" rel="noopener" href="http://www.storm.mg/article/323668">申請哥倫布計畫被「羞辱」 台大教授痛批科技部承辦人員官僚 </a></li>
+<li>Wilson Sayres <em>et al.,</em> <a target="_blank" rel="noopener" href="http://www.biorxiv.org/content/early/2017/08/03/170993?rss=1">Bioinformatics Core Competencies for Undergraduate Life Sciences Education</a> (biorxiv)</li>
+</ol>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%9F%BA%E5%9B%A0%E9%AB%94%E5%AD%B8%E7%9A%84%E7%89%87%E6%AE%B5/" class="category-chain-item">基因體學的片段</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%AF%A6%E9%A9%97%E5%AE%A4/">#實驗室</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>淺談基因體學研究及核心</div>
+      <div>http://example.com/2017/09/02/genomicscoreskills/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Jason Tsai</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>發布於</div>
+          <div>2017年9月2日</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>許可協議</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2017/10/01/dangguestpost/" title="生科畢業碩士的心路歷程(劉當)">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">生科畢業碩士的心路歷程(劉當)</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2017/05/29/lifeofbeingapostdoc/" title="博後五年的心路歷程">
+                        <span class="hidden-mobile">博後五年的心路歷程</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目錄</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜尋</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">關鍵字</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允許 JavaScript 運行的環境下瀏覽效果更佳</div>
+  </noscript>
+</body>
+</html>

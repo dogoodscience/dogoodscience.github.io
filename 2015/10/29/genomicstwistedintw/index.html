@@ -1,0 +1,672 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-TW" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/Mycena.icon.png">
+  <link rel="icon" href="/img/Mycena.icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Jason Tsai">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="genomics in Taiwan is twisted.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="做基因體的沒有在做基因體">
+<meta property="og:url" content="http://example.com/2015/10/29/genomicstwistedintw/index.html">
+<meta property="og:site_name" content="Do good science">
+<meta property="og:description" content="genomics in Taiwan is twisted.">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://example.com/img/changeandchaos.png">
+<meta property="article:published_time" content="2015-10-29T10:26:28.000Z">
+<meta property="article:modified_time" content="2022-08-29T23:39:05.625Z">
+<meta property="article:author" content="Jason Tsai">
+<meta property="article:tag" content="實驗室">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/changeandchaos.png">
+  
+  
+  
+  <title>做基因體的沒有在做基因體 - Do good science</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Do good science</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首頁
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                歸檔
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分類
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                標籤
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                關於
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/changeandchaos.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="做基因體的沒有在做基因體"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2015-10-29 18:26" pubdate>
+          2015年10月29日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.7k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          23 分鐘
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">做基因體的沒有在做基因體</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>這是一篇怨念文。滿滿的怨念。</p>
+<p>實驗室已經開張滿 10 個月 ，除了一些小事件<del>像是學生突然衝進來說我們實驗室經費變負的</del>之外，最近來了一個  <del>超挑食只吃貴的東西一直說自己很年輕很欠揍 ~~新助理，甚至騙到生平第一個碩士班學生 (咦)。運作與風氣應該算是步上軌道 ~~應該有吧</del>。跟為期不多 <del>沒辦法自己太害羞</del> 的合作者目前都算愉快，希望未來的幾年可以開始有一些成果 <del>如果還沒被換柱的話</del>。</p>
+<p><img src="/img/DSC_2076.png" srcset="/img/loading.gif" lazyload alt="被騙進來的當當"></p>
+<p>離寫上一篇網誌有一個月的時間，照理說離平均四個月寫一篇的速度還有一點時間 <del>話說真的有人在看嗎?</del>，但是這兩個月發生了太多事讓我覺得不吐不快，而我內向 (悶騷) 的個性除了跟我的老婆跟我的小狗跟我的鏡子訴苦之外，這網誌大概是除了我實驗室之外唯一的淨土。</p>
+<p>因為自己專業的關係，有幸接觸到生科不同領域的老師，在這幾個月中，也有幸參加到不同的會議跟研討會。然後呢。有一點失望。失望的不是老師們的研究，大家都其實做的很好。</p>
+<p><strong>我失望的是大家對 genomics 基因體學的態度。</strong></p>
+<blockquote>
+<p>“燒錢”</p>
+</blockquote>
+<blockquote>
+<p>“隨便定個序就可以有好paper” <del>真的是一句話惹毛做基因體的</del></p>
+</blockquote>
+<blockquote>
+<p>“定序一個基因體能幹嗎”</p>
+</blockquote>
+<blockquote>
+<p>“你可以幫我跑一個程式嗎”</p>
+</blockquote>
+<blockquote>
+<p>“是時候回去用傳統的方式作實驗” <del>所以是PCR machine不要用然後用三個不同溫度的水浴槽嗎？</del></p>
+</blockquote>
+<blockquote>
+<p>“數學家 (??) 根本不懂生物的問題” <del>話說我是生化學及遺傳學本科畢業的啊～～～～</del></p>
+</blockquote>
+<blockquote>
+<p>“你定了我們就不能定了”</p>
+</blockquote>
+<blockquote>
+<p>“你做genomics喔，那不是花錢定序就好了?” <del>你做生醫喔。那不是餵老鼠做PCR 就好了。</del></p>
+</blockquote>
+<p>雖說隔行如隔山，可是當我可以了解甚至感激其他老師研究課題裡的樂趣及重要性，我就有點無法忍受為什麼大家看待基因體學好像它是這麼一個簡單可行可以隨便拿CNS但是自己畢竟是要用自己傳統的方法所以它是一個無用浪費錢的方法。</p>
+<p>這現象其實不只在台灣，在國外也是:</p>
+<blockquote>
+<p>延伸閱讀: “<a target="_blank" rel="noopener" href="https://thescienceweb.wordpress.com/2015/07/27/most-people-doing-genomics-not-actually-doing-genomics/">Most people doing genomics not actually doing genomics</a>“</p>
+</blockquote>
+<p>那，為什麼會這樣呢？我想從整個基因體學的歷史講好了。</p>
+<h3 id="基因體學的歷史"><a href="#基因體學的歷史" class="headerlink" title="基因體學的歷史"></a>基因體學的歷史</h3><p><strong>基因體學顧名思義就是任何對基因體的研究，本質上就是遺傳物質的傳播，交互作用，調控，功能等等。可以從一堆最簡單的ATCG 裡面找出所有物種如何生活，思考，傳承的機制不覺得很迷人嗎</strong> </p>
+<p>從模式物種如線蟲，果蠅，酵母菌到第一個人類的基因體圖譜，他們的發表無不是整個研究領域在背後支持。當初果蠅Flybase  的基因註解是邀請全世界的果蠅專家，把他們鎖在一台電腦室裡面(!)，教他們人工註解，然後一個一個檢查及改進從電腦原本預測的註解。所以基因體發表了，整個研究領域馬上可以利用到。當然，這種大計畫也不是沒有壞處。當初整個研究領域就是要等：如人類基因體藍圖發表之前，所有要clone human genes 的計畫都會被擋下來（就等計畫發表就好了嘛！），那沒有參與計畫的一些小學者當然就比較可憐。</p>
+<p>不過因為這樣，然後領域懂得分享。這也奠定了模式物種研究比其他物種都進步了五到十年。畢竟研究無止盡，一個基因體提供了新的知識，新的分享方式，新的研究問題，新的研究方法。</p>
+<p>自從Solexa 2008  年剛開始變成現在的Illumina，定序的花費整個大大地降低，非模式物種的研究領域想要跟進，想要利用基因體的方式促使整個研究領域的進步跟資料共享。有些成功了。有些因為種種原因（惡性競爭，根本不會分析，發表了期刊但是相關的訊息沒有發表給相關領域的同事，物種本身生物很奇怪）而失敗，變成這個領域充斥著一些好的跟很不好的研究。一堆基因體發表在好的期刊上面，結果相關領域的學者不能用（組的太爛，註解太差）。 一堆transcriptome 在PLOS one, 結果到最後還不是要有一個genome 重新分析確切的基因數量。</p>
+<h3 id="那台灣的亂象是？"><a href="#那台灣的亂象是？" class="headerlink" title="那台灣的亂象是？"></a>那台灣的亂象是？</h3><p><img src="/img/changeandchaos.png" srcset="/img/loading.gif" lazyload alt="在想是要用這張還是選舉的照片解釋亂象"></p>
+<p>台灣所有研究方向就是跟著歐美大國一起走，慢了幾年後想藉由所謂的次世代定序 NGS  的風浪申請了很多經費。大學一些基因體所，中心，甚至學程都開了，但是裡面的人都不是作基因體研究的。廠商外包定序服務給大陸，然後發現台灣的老師根本不知道定序需要花多少錢也不知道怎麼分析所以可以開始亂定價錢時。這中間喪失了多少經費多少人力多少時間多少know  how，不能為廠商或是老師所用，真的是非常非常非常非常的可惜。後來好不容易有一些分析的經驗，結果定序資料沒有想像中的好品質好或者是實驗設計錯誤(?) ，結果這些人緊張了<del>因為計畫成果要寫了</del>，然後開始互相責怪互相推卸責任。廠商會開始失聯 (?) 或是說已經不是他們的責任，其實也是公司之前分析資料的人是一個剛碩博班剛畢業的菜鳥看不過去或是壓力太大而離職了。。。</p>
+<p>ㄟ，我上一段忘記畫線了。</p>
+<p>我舉例我這幾個月發現的幾個範例好了。</p>
+<ul>
+<li>很便宜的Ion torrent exome sequencing, 廠商吹噓多快多準，結果call 出來的genotype accuracy 沒有到50%…</li>
+<li>一個 de novo genome 的project 全部被拿去作Pair end 的定序 <del>你知道有東西叫做Mate pair 嗎</del></li>
+<li>一個 de novo genome 的project N50 不好，結果後來發現Mate pair 95% 都是adaptor <del>你知道有程式叫做 trimomatic</del></li>
+<li>一個一千多萬的de novo genome project 的bioinformatics PI 問assembly 完後要作什麼 <del>不會google 也可以寫信到處問吧!?!?!</del></li>
+<li>申請一個新的 genome project 結果拿到錢結果不知道該怎麼做</li>
+<li>有學生花兩年組一個37bp single end 的基因體 <del>拜託重新定序就好了嘛！！</del></li>
+</ul>
+<p><strong>滿滿的人力經費被浪費掉了。</strong>當然也有很成功的例子，不過這篇是怨念文就不講了。</p>
+<p>基因體學是很強大的，也很有潛力的。但是它也只是我們嘗試系統性解決一些生物問題的很多種方法之一。很多老師把它當作好像是世紀帝國科技樹點滿然後開始蓋世界奇觀就贏了比賽一樣，但它只是個一個開始。有一個基因體會讓一個研究領域更團結（合作），更多人可以來跳進來研究，而帶出新的方法或是新的知識。我本身很享受跟不同老師利用基因體以演化的方式討論很多有趣的生物現象，也利用這樣的方式多認識人希望可以一起研究台灣特有的研究問題。</p>
+<p>現在台灣的老師跟廠商繳了那麼多學費，技術也都開始有也都學乖了。希望大家可以多多利用基因體學可以帶來的分析結果，去分析及解釋一個生物問題，而不是把它變做無數個抽屜裡的行動硬碟。人才不是沒有，不過我們還是落後太多，希望大家多多加油。我預測未來的幾年將會有一波計畫把網路上&#x2F;NCBI組的不好的基因體都下架重組（因為定序會越來越便宜），而基因體將會是除非組成染色體的不然期刊不接受。資料會越來越大，而廠商跟老師還想要把資料跟分析外包的話，只會被下個世紀的生物領域淘汰。<del>淘汰也好。</del> </p>
+<p>不過，寫完這篇大家對基因體學就會比較改觀嗎？</p>
+<p>沒有，因為你只想到你自己。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%9F%BA%E5%9B%A0%E9%AB%94%E5%AD%B8%E7%9A%84%E7%89%87%E6%AE%B5/" class="category-chain-item">基因體學的片段</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%AF%A6%E9%A9%97%E5%AE%A4/">#實驗室</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>做基因體的沒有在做基因體</div>
+      <div>http://example.com/2015/10/29/genomicstwistedintw/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Jason Tsai</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>發布於</div>
+          <div>2015年10月29日</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>許可協議</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2015/12/28/pi1year/" title="實驗室一年後">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">實驗室一年後</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2015/08/31/advicetostudents/" title="跟大學生或是要讀博士班的人一些問題及建議">
+                        <span class="hidden-mobile">跟大學生或是要讀博士班的人一些問題及建議</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目錄</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜尋</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">關鍵字</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允許 JavaScript 運行的環境下瀏覽效果更佳</div>
+  </noscript>
+</body>
+</html>

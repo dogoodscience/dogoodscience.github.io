@@ -1,0 +1,662 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-TW" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/Mycena.icon.png">
+  <link rel="icon" href="/img/Mycena.icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Jason Tsai">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="bureaucracy sucks">
+<meta property="og:type" content="article">
+<meta property="og:title" content="實驗室三年半 – 好像要開始需要想升等前的OS">
+<meta property="og:url" content="http://example.com/2018/07/10/pi3yearandhalf/index.html">
+<meta property="og:site_name" content="Do good science">
+<meta property="og:description" content="bureaucracy sucks">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://example.com/img/DSC_0573.png">
+<meta property="article:published_time" content="2018-07-10T10:26:28.000Z">
+<meta property="article:modified_time" content="2022-08-29T23:35:19.663Z">
+<meta property="article:author" content="Jason Tsai">
+<meta property="article:tag" content="實驗室">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/DSC_0573.png">
+  
+  
+  
+  <title>實驗室三年半 – 好像要開始需要想升等前的OS - Do good science</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Do good science</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首頁
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                歸檔
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分類
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                標籤
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                關於
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/DSC_0573.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="實驗室三年半 – 好像要開始需要想升等前的OS"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2018-07-10 18:26" pubdate>
+          2018年7月10日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.6k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          22 分鐘
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">實驗室三年半 – 好像要開始需要想升等前的OS</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>實驗室三年半了。有點累了 (咦）。 </p>
+<p>這段期間一直衝其實根本沒有好好的放鬆一下思考有的沒的 <del>除了那次去東沙島</del>。</p>
+<p><img src="/img/DSC_0573.png" srcset="/img/loading.gif" lazyload alt="東沙是想事情的好地方"></p>
+<p>女兒一歲後，每天讀兩篇paper 的習慣早就拋棄，也不記得上次好好讀完一本書是什麼時候，甚至連看漫畫的時間都大大縮短 (咦）。丟掉這些喜歡的東西去玩更喜歡的女兒當然更值得，但是是否能更努力然後都要呢<del>好貪心</del>？ 除了時間的管理更加重要，整個研究的方向勢必也要做些調整。畢竟那種我自己覺得不聰明但是我比別人努力&#x2F;多花時間的狠勁也沒有了。</p>
+<p> 講現實一點，我一直覺得自己之前唯一的優勢是時間，那將來選擇心中更理想的家庭生活勢必要去思考一個新的運作模式。我不想變成那種好像一定要在實驗室24 個小時，然後之後有一天被雜誌報導說這就是做研究的日子然後謝謝父母老婆扛起家庭然後我很虧欠小孩這樣。<del>在現在競爭的科研環境其實說不定是沒錯。</del>有些人這樣選擇，但至少在建立家跟實驗室的這一個時間點上折衷不是我的選擇。</p>
+<p>另外一個就是三年半這個時間點有點尷尬。已經不是菜鳥，現在輾轉開始得到這段時間你所作所為的後果。某一方面可以說是果實開始成熟可以採收， <del>另一方面說不定有些事情處理的不成熟未爆彈也準備爆炸</del></p>
+<p>以發表來說，回來三年半有發表17 篇、兩篇被接收、三篇正在review、正在寫另外四篇。這些都是實驗室的成果，在這過程也學到很多新的經驗跟知識，當然很開心也很驕傲。教課也教到快崩潰 <del>學生說不定也是</del>  但是還是有撒種子加施肥的感覺。除此之外，心中還是有一些迷惘跟不確定性。台灣它的包容性太強，看到有些心目中認為不太對的範例反而效果比較好（笑），不過也更覺得更要守住自己的理想只等時間來證明。目前也只能把當下想法整理一下，寫下來，只希望有一天從頭來看可以讓自己有一種 “啊～我現在比較成熟 <del>機車</del> 了應該要這麼做 “ 的感覺，</p>
+<p>寫下來了，就不去想了。畢竟一直想這些也徒增煩惱。</p>
+<p>這次想要寫下來的是升等，畢竟也快了。還有老師以為我已經升了 Orz. </p>
+<p>其實自己文章寫到一半，然後有人在ptt po 說現在的年輕助理教授怎麼樣怎麼樣，自己玻璃心了一下就改成joke版本回文，結果竟然快被推爆， fb 竟然有3k多個like。這證明廣大的將來、現任、跟曾經的助理教授們都很有感？ </p>
+<p>知道的人應該知道我在說哪一篇 XD。</p>
+<p>~~有些人還說用成表格以後讓評審委員打勾就好。XDD ~~</p>
+<p>~~其實有聽過更誇張說拿那麼少錢做得太好CP值太高所以不建議升等 ~~</p>
+<p>撇開那些top 跟bottom 10% 的不說，大部分人升等的不確定感加上經濟的壓力真的會超靠北。</p>
+<figure>   <img src="/img/flipburger.png" srcset="/img/loading.gif" lazyload alt="要去賣雞排惹" style="width:50%" >   <figcaption>要去賣雞排惹 </figcaption>
+
+
+
+<p>因為這些可歌可泣的故事，升等審查這個制度在台灣變的有點弔詭，原意非常好但是實際上執行上有點難處。第一個是審查的人選。照理說評審委員會是在國內然後你所在的領域的大老們。然後他們應該會去做一個公正的評價。但是台灣太小了。你的領域可能只有幾位老師，大部分說不定還在往上爬，然後大老說不定還是你的指導教授。所以這時候你待的機構為了公正（？）會把評審委員換成其他領域的老師的話 <del>或是同一個領域但是有利益衝突的</del>，那些評審委員說不定都不了解你做的課題本身的重要性跟你用的方法的正確性跟創新性，這時候就會有一些偏差出現了。</p>
+<p>送國外？在國外不太清楚你的大學你拿到的經費，只看你的paper。懂的看門道，不懂的看IF。然後這邊也會有偏差。怎麼只有一篇？  怎麼不請博後？何不食肉糜？等等的comments 就會出現了。其實國外的tenure process  也一樣不輕松，politics一樣的弔詭。只是國外領域大到你還是會有不太認識你的老師來審查你（相對公正？）。</p>
+<p>到底要怎麼審查非常難，這也是為什麼IF  雖然一直被靠北，但是它是沒辦法中的方法或者是某一方面來說年輕學者唯一可以被系所裡佔有一席之地或是申請到經費的方法  <sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="[How will you judge me if not by impact factor? (2018) John Tregoning](https://www.blogger.com/#)">[1]</span></a></sup>。有一天換我要審查的時候，我應該要怎麼辦？該依照大學的排名考慮到這個老師所處的環境？要不要因為你進好的大學但是都沒拿到經費來考慮？要不要因為你進中後段的大學但是拿到超多經費來考慮？<del>要不要因為某某人生勝利組老師拿到哥倫布就算有十篇CNS但是因為人太帥讓人嫉妒就直接刷掉？</del></p>
+<p>有人會說這樣考慮太多，應該只看他研究的產量。就是所謂的只看結果論。那教課呢？那家庭呢？性別（女性學者在目前的環境還是佔弱勢）呢 ？那這樣要給剛進來的助理教授的建議是不是 i) 拼命壓榨學生只拼p 還是 ii) 把心力放在系所跟領域的大老打好關係就好？</p>
+<p>最終來說，做好的研究不等於會有好的”事業”。所以能做自己喜歡的研究然後對周遭的人都負責最好，如果不行或是覺得做某些事CP值比較高的話，那就去做吧。不會是每個人都把升等當作最終的目標，但周遭的種種壓力、不確定性、跟種種會影響的因素都會讓這條路走得不輕鬆。</p>
+<p>當然，什麼因素都考慮進去那這樣說不定每個人都輕輕鬆鬆升等：這個人太帥所以直接升等、那個人雖然完全沒p 但只是因為實驗很難做不出來、這個人只是有點佛系等等。我覺得這樣是更不對的，因為目前台灣沒有什麼升等後繼續督促的方針。</p>
+<p>講到這邊，好像真的有點難去抓那一個平衡。然後我覺得升等的審查跟計畫的審查是分開的。我覺得審查計劃就是計劃本身的好或壞，是可以從問題的本質跟實驗的設計去給個分數的。但是實驗的設計可能跟儀器好壞有關係，一開始沒有經費買儀器的是不是就註定永遠拿不到計畫？所以科技部有設計直接去探討有趣問題的計畫，我覺得這很棒。這種要做比較的本來很難的沒錯，但是也不能就變均分啊，連 XXXX 大學都拿到經費了。</p>
+<p>我本人是傾向升等審查公平 (Equity)  。拿到多一點經費就應該要多一點責任。訓練出好的學生，發展一個國家的科學，或是做比較冷門(IF低)但是大家包括評審認為它是該做的。然後對，我覺得應該要考慮到一些額外的因素如性別，或不要考慮到一些額外的因素如年齡等等。</p>
+<p>寫那麼多， 就是想讓自己知道有很多條路走，每一條說不定結果都一樣，但風景絕對不同。也希望在走在自己選擇的某一條路的途中能認識到好的夥伴走得更高興。然後沿路澆澆花種種樹，讓之後走這條路的人可以走得更開心也可以走得更遠。這樣就好了。</p>
+<p> 淘汰的機制呢？目前無解。我超級小咖不被這浪潮淘汰就謝天謝地了。 </p>
+<figure>   <img src="/img/liberation.png" srcset="/img/loading.gif" lazyload alt="Liberation one day. from ref2" style="width:70%" >   <figcaption> reftwo </figcaption>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a target="_blank" rel="noopener" href="https://www.blogger.com/#">How will you judge me if not by impact factor? (2018) John Tregoning</a>
+<a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span><a target="_blank" rel="noopener" href="https://www.blogger.com/#">EQUALITY, EQUITY AND JUSTICE Sandeep Kumar</a>
+<a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Lab-life/" class="category-chain-item">Lab life</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%AF%A6%E9%A9%97%E5%AE%A4/">#實驗室</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>實驗室三年半 – 好像要開始需要想升等前的OS</div>
+      <div>http://example.com/2018/07/10/pi3yearandhalf/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Jason Tsai</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>發布於</div>
+          <div>2018年7月10日</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>許可協議</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2018/08/05/pidirection/" title="一個實驗室的走向？">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">一個實驗室的走向？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2017/12/16/pi3year/" title="實驗室三年了- 回台灣會後悔嗎？">
+                        <span class="hidden-mobile">實驗室三年了- 回台灣會後悔嗎？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目錄</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜尋</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">關鍵字</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允許 JavaScript 運行的環境下瀏覽效果更佳</div>
+  </noscript>
+</body>
+</html>
