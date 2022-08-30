@@ -1,0 +1,720 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-TW" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/Yeast.png">
+  <link rel="icon" href="/img/Mycena.icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Jason Tsai">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="how to code">
+<meta property="og:type" content="article">
+<meta property="og:title" content="當初是如何學程式語言的-心路歷程跟想法">
+<meta property="og:url" content="http://example.com/2021/11/18/howtocode/index.html">
+<meta property="og:site_name" content="Do good science">
+<meta property="og:description" content="how to code">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://example.com/img/IMG_6039.png">
+<meta property="article:published_time" content="2021-11-18T10:26:28.000Z">
+<meta property="article:modified_time" content="2022-08-30T23:47:29.283Z">
+<meta property="article:author" content="Jason Tsai">
+<meta property="article:tag" content="實驗室">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/IMG_6039.png">
+  
+  
+  
+  <title>當初是如何學程式語言的-心路歷程跟想法 - Do good science</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"UA-239315403-1","gtag":"G-HB59QB63TB","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+    <!-- Google Analytics -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript('https://www.google-analytics.com/analytics.js', function() {
+          window.ga = window.ga || function() { (ga.q = ga.q || []).push(arguments) };
+          ga.l = +new Date;
+          ga('create', 'UA-239315403-1', 'auto');
+          ga('send', 'pageview');
+        });
+      }
+    </script>
+  
+
+  
+    <!-- Google gtag.js -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript('https://www.googletagmanager.com/gtag/js?id=G-HB59QB63TB', function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HB59QB63TB');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Do good science</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首頁
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                歸檔
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分類
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                關於
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/IMG_6039.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="當初是如何學程式語言的-心路歷程跟想法"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2021-11-18 18:26" pubdate>
+          2021年11月18日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.3k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          36 分鐘
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">當初是如何學程式語言的-心路歷程跟想法</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>快到年底要幹嘛，當然寫科技部計畫啊 然後又被reject QQ<br>自己拖延症又發作，所以乾脆來寫網誌，也彌補一年至少有寫三篇的進度。</p>
+<p><strong>這一篇文章想要探討的是半路出家學程式語言的心路歷程。<br>然後回顧的話需要注意什麼。</strong></p>
+<p>今年開學學期初變成學程的教務委員之一時，當下真的感覺任重道遠。其實課程安排本身是不用做太多事情的，因為之前的老師們都已經設計得很好了。 </p>
+<p>但在討論的過程中，開始思考的是所謂學生應該要有的核心能力。 就是如知道現在一個生命科學問題的研究，所需要的領域知識(domain knowledge) 和核心能力(core knowledge)。 </p>
+<p>一個所謂的核心課程，是需要搭配多少的核心能力跟領域知識呢？ 之前有寫一篇 <a href="/2017/09/02/genomicscoreskills/">基因體學的核心</a>，現在重新閱讀覺得當初把兩種能力糾纏在一起。因為覺得都需要學啊～</p>
+<p>現在如果要更清楚地講出來，<strong>我定義核心能力為</strong></p>
+<blockquote>
+<p><strong>如果有一天，你選擇在另一個領域耕耘下去的話，是可以用到的。</strong> </p>
+</blockquote>
+<p>所以某一方面我也認為核心能力應該是像可轉移的技能 (transferable skills)。 像是基因體學的話我會覺得是領域知識[生物學+實驗+分析] + 核心知識 [數學] ＋ 核心知識 [程式語言] 。</p>
+<p>因為每個領域的增進，如生命科學，都開始跨進了高通量&#x2F;面向的資料產生， 變成簡單或是制式化的軟體已經不太能去滿足分析的結果，再加上解譯語言(interpreted language)的進步如python <del>如果不同version env可以解決的話</del> 讓人更好上手，程式語言某一方面從domain knowledge  變成很多領域說不定都很需要的知識，就變化成所謂的核心知識。 </p>
+<p>其實說生科增進也不盡然正確，畢竟生物學（一隻、兩隻的學問）做到最後就是生態學（多細胞、多物種、多環境、時間緯度）啊.. 只是我們有更完善的工具開始去研究現象而已。 </p>
+<p>所以，因為課程的關係再次聯想到現在學生的環境，想說是時候重新想起當初是笨笨的學。 這邊文章是分享當初的血淚史，但是重點會放在自己的心得。也會分享一些說不定可以引起深思的想法。</p>
+<p><strong>[前提]</strong> 我一開始接觸到程式語言是在大學時，也不是覺得課業需要所以去上課，而是打線上遊戲需要用到程式語言.. 爲什麼需要用程式語言？啊就寫外掛啊。 </p>
+<p><img src="/img/ropic.png" srcset="/img/loading.gif" lazyload alt="ropic"></p>
+<p>要寫不同腳本，鎖定地圖路線、打寶撿東西，自動升級.. 而且還是在沒有GUI (使用者介面) 的方式下執行。 印象中寫得最開心的是如果角色講什麼話，就要用regular expression 抓出來然後做回應這樣。然後再依照可能的回應再做回應。所以那些 if, elsif 那些簡單的指令就學起來了。所以玩遊戲（？）可以精進能力我是真的很同意就是了。 </p>
+<p>很抱歉當初寫外掛賺學費..，祝當初分享腳本的大大們一生平安。</p>
+<p><strong>[碩士]</strong> 碩士時代真的算是我被砍掉重練的時間點。</p>
+<p>延伸閱讀： <a href="/2016/08/22/phdlife/">碩士班到博士班的心路歷程 </a> 。</p>
+<p>那時第一堂課直接被丟進學C++。報告是要寫出一個迷宮的程式，所以馬上接觸到基本的演算法dynamic programming。然後pointer 指來指去指到天荒地老..</p>
+<p>細節忘了。但是記得的是一開始很崩潰，但是compile後走出迷宮的當下是一種成就感！最重要的是，好像寫程式語言也不是那麼的難！ </p>
+<p>我想這就是學程式設計課程設計的初衷吧。學生會覺得很崩潰但在控制中 (?)，但是寫的程式碼到最後一定會成功，然後讓學生願意繼續下去。 這也包括了解自己的工作環境 (aka電腦），可以開始自己安裝一些軟體，然後有結果跑出來，甚至開始嘗試解釋並想下一步。 </p>
+<p>第一步就是脫離按一顆鈕 (step out of comfort zone) 的境界。<br>~~題外話：有些地方的生物資訊核心實驗室是好多個人+安裝geneious然後教你跑geneious. 這樣對嗎？  ~~</p>
+<p>碩士後期去了不同實驗室實習，做了幾個小專案。所以有接觸到Java 跟 Perl. 學到了有關OO, 不同databases, 然後跟同學嘴砲看誰可以寫出最短或是最長的perl 指令。這段時間很快樂。</p>
+<p>在當時，我覺得有做了一件事讓現在回想是蠻有幫助的。就是買有關程式語言的書然後整本讀下去。 而且盡量是不用特定是對你的領域量生訂做的（如: XXX for biologists)。 因為都有讀過，會發現對特定領域打造的程式語言書其實是增加讀者的熟悉度，讓你對裡面的問題產生共鳴，而減少對新東西的恐懼感。 </p>
+<p>But, 我覺得有一部分變得說作者必須要遷就這個領域的問題，所以在解釋某些東西時反而會綁手綁腳，有時讓人更困惑。 而且大部分的課程設計也是類似，所以也不用再去買一本類似方法的書。 因為讀這些書的主要目的之一是讓你知道你現在在用的程式語言還可以做什麼，而不是說你的問題怎麼解決。 </p>
+<p>再來就是讀這些書雖然不會一次記得，但你會在大腦建構一個初步的資料庫，然後有一種 ‘這種function很實用說不定有一天會用到’ 的感覺。 我覺得這很重要。</p>
+<p>我覺得現在很多人寫code 會是這個模式: </p>
+<p>想解決問題 ➡️ stack overflow <del>時間花很久因為沒有關鍵字</del> ➡️ 複製貼上繼續寫 ➡️ 下一個問題 ➡️ 被問題解決</p>
+<p>我會偏向： 自己大腦的資料庫 ➡️ 想解決問題 ➡️ stack overflow (時間花少一點因為有關鍵字) ➡️ 更新資料庫並做連結 ➡️ 下一個問題 ➡️ 可以自己解決 | stack overflow  </p>
+<p>所以第二步，我會建議就是找一本大家都在推的程式語言書，然後就一整本系統化的讀下去吧！</p>
+<p>延伸閱讀：如果對R有興趣的話，<a target="_blank" rel="noopener" href="https://r4ds.had.co.nz/">R for data science</a> 是一本很好的入門書。 </p>
+<p><img src="/img/IMG_6039.png" srcset="/img/loading.gif" lazyload alt="書本恆久遠，一本永留傳"></p>
+<p><strong>[博士]</strong>  之前寫的<a href="/2016/08/22/phdlife/">網誌</a>講到  “那我應該從哪裡開始？” </p>
+<blockquote>
+<p>“那我應該從哪裡開始？” 我問著。 （博士班）導師從他書櫃抽出了幾本書 ，還有那時剛發表的一篇<a target="_blank" rel="noopener" href="http://www.nature.com/nature/journal/v437/n7063/full/nature04226.html">Nature</a> ，“把這些書讀了搞懂。然後把這個paper 的資料下載下來重新分析一次。只有親手算，你才知道問題與答案背後的邏輯。”。所以，博士的前五個月我把這些書跟文獻讀完，實驗開始上正軌，也重新分析了一篇Nature 的文章 <del>誤</del>。 </p>
+</blockquote>
+<p>這一段時間，是培養邏輯跟<strong>寫程式的功力</strong>。那時候根本沒有stack overflow, 學長姐也沒有code 傳下來. 所以我真的是邊學遺傳學的各種算式然後自己寫（因為網路上現有的不太能處理missing  data)，所以真的就是當作一個程式設計師(Programmer) 一直寫一直寫一直寫. 然後也接觸到不同資料的結構。所以自己的走向還是一樣，找書，然後慢慢讀。</p>
+<p>邏輯學好了，資料的結構比較得心應手了，都會影響之後寫程式的想法跟效率。 所以第三步，就是開始練功吧。<br>看我這部分寫的那麼短就知道當時多痛苦XD </p>
+<p>其實到這個階段，至少在資料處理的部分你應該就有很多經驗了。之後就是不同資料處理的方法跟累積更多經驗。</p>
+<p><strong>[博後]</strong> 這時其實寫程式的年資也差不多四年了。<br>如果是資工畢業的應該年薪百萬看千了 XD. </p>
+<p>延伸閱讀： <a href="/2017/05/29/lifeofbeingapostdoc/">博後五年的心路歷程</a></p>
+<p>在當博後的這個時期 ，其實就是要挑戰你的即戰力。資料太多，如果你處理不夠快或是沒有能力解決問題，就會被叫去處理比較 ‘溫和’ 的資料。 </p>
+<p>然後被淘汰。 </p>
+<p>其實我真的到這時期才開始用很多 script 跟管線 (pipelines).<br><del>因為真的之前被其他的人的pipeline嚇到了</del> 害死</p>
+<p><del>我一直覺得pipeline 是處理人~~~~~~的問題</del>而不是資料的問題 XD~~<br>~~所以當我知道如Ensemxx都是perl+pipeline的時候我嚇死了XD<br>~~</p>
+<p>反正大部分的算式都是自己需要重寫等等，所以博班時期反而沒什麼用到。<br>但是生物資訊本來就是要連接超級多～的軟體，然後又超級多計畫，所以這邊就重新開始用很多script+pipeline+更多的eval <del>怕爆</del>. </p>
+<p>在這邊你也需要用新的系統，開始了解硬體，開始在團隊裡面一起寫。所以了解到更多硬體，效能，架構等等。真的是學無止境啊！ </p>
+<p>這邊我也覺得半路出家也有一個好處，你真的可以意識到每個專業的出發點，然後嘗試去找出一個溝通的方式。在這裡我要說這不是通才跟專才的辯論。會溝通不代表你會解決問題。有很好的能力不代表你不會被人解決（咦）。時間拉長來看，你其實就是當下需要什麼就做什麼，比較重要的反而是從很早就需要養成持續學習的習慣，並做選擇。 </p>
+<p>到這裡，我覺得第四步是做選擇。 </p>
+<p>因為四、五年放在大學其實也是一個學位了。如果是生科生轉資訊，你也可以考慮要更偏生物資訊的研究，或是直接找資工類的工作。 畢竟薪水就是高很多。我覺得沒有對錯。這也是我覺得培養核心能力的重要性。</p>
+<p>所以要問自己，你喜歡寫軟體給大家用嗎？你喜歡追求效能嗎？你想繼續lv up 變成developer&#x2F;engineer 嗎？ 如果要應用甚至開公司的話這些都是必要的，甚至更多。</p>
+<p>還是你只是拿程式語言來當作你研究的工具之一？ </p>
+<p>然後做個選擇。接下來要追求的就是domain knowledge 的增進 或是天天開始刷leetcode。</p>
+<p>我選擇讓程式語言當我的核心能力之一，然後覺得更想知道的是演算法的部分，所以在博後時期也去修英國空中大學的數學系（差兩個學分就拿到畢業證書了 QQ)。</p>
+<p>然後我接下來做的反而是去跟不同實驗室合作，了解並分析不同資料的面相，如何處理等等。 所以跟生物資訊的老師們比，在效能、演算法或是資料的新處理方式想法上我是望塵莫及的。但我也更了解自己的能力跟興趣所在，也知道哪些是自己能做的。</p>
+<p><strong>[現狀]</strong> 這是我當時的路程。那現在呢？ 我很明顯能感覺到，如果是半路出家的話，現在學生只要學 import 跟知道 slack overflow 就好了（誤）。</p>
+<p><img src="https://imgs.xkcd.com/comics/python.png" srcset="/img/loading.gif" lazyload alt="import funding; xkcd [python](https://xkcd.com/353/)"></p>
+<p>因為資料的大爆炸，也因為越來越多人寫很好的package，讓大家可以馬上上手分析，然後馬上有結果，然後大家好棒棒。 因為package 有制式的options, arguments, 所以變成know-how 反而是怎麼微調一些參數。 </p>
+<p>這邊會有幾個問題，如學生報paper 的時候就會說他們跑這個軟體然後這樣, 但是不知道背後的演算法。 或是一開始學的能力是串很多軟體在一起，而不是系統性地學習邏輯。 回到我以前學習的方法也不是很好，畢竟一個人沒有任何幫助寫code 也是很痛苦的.. </p>
+<p><strong>所以第五步的建議是，要了解你跑程式、演算法、程式碼背後的意義。如果你還不知道的話。</strong></p>
+<p>把時間拉開，可能到最後學到的知識可能都差不多，但是能更有效率的學習跟少走一些彎路是好的。 要繼續思考如何學習，不管你在哪個階段。</p>
+<p>寫到這邊，好像也沒什麼很太多具體的建議像是要學這個還是那個。因為本來不同時間點本來就需要不同的東西。如現在我寫code 的時間越來越少，反而是看學生&#x2F;人家的 code 怎麼寫，或是很快regular expression 查一下要的東西等等…</p>
+<p>好吧，<strong>最後一步的建議是regular expression 會是你一輩子很好的朋友還有學無止境。</strong></p>
+<p><img src="https://imgs.xkcd.com/comics/regular_expressions.png" srcset="/img/loading.gif" lazyload alt="s/graduate/phd/gi ; xkcd [regex](https://xkcd.com/208/)"></p>
+<p>還是太多要學，大家加油。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%A0%94%E7%A9%B6%E7%9A%84%E5%BF%83%E8%B7%AF%E6%AD%B7%E7%A8%8B/" class="category-chain-item">研究的心路歷程</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%AF%A6%E9%A9%97%E5%AE%A4/">#實驗室</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>當初是如何學程式語言的-心路歷程跟想法</div>
+      <div>http://example.com/2021/11/18/howtocode/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Jason Tsai</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>發布於</div>
+          <div>2021年11月18日</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>許可協議</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+              <span class="hint--top hint--rounded" aria-label="NC - 非商業性使用">
+                <i class="iconfont icon-nc"></i>
+              </span>
+              </a>
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+              <span class="hint--top hint--rounded" aria-label="ND - 禁止演繹">
+                <i class="iconfont icon-nd"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/04/16/2022.happybdaycandy/" title="老婆生日快樂！喜歡妳的100個理由 [2022]">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">老婆生日快樂！喜歡妳的100個理由 [2022]</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/11/11/pi7yearstruggle/" title="實驗室快七年了 - 小迷惘跟困境">
+                        <span class="hidden-mobile">實驗室快七年了 - 小迷惘跟困境</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目錄</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜尋</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">關鍵字</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允許 JavaScript 運行的環境下瀏覽效果更佳</div>
+  </noscript>
+</body>
+</html>
