@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dogoodscience.biodiv.tw/2022/09/24/pi8yearsnew/</loc>
+    
+    <lastmod>2022-10-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://dogoodscience.biodiv.tw/2021/10/03/somethoughtsongenomics/</loc>
     
     <lastmod>2022-09-23</lastmod>
@@ -29,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://dogoodscience.biodiv.tw/2015/04/16/2015.happybdaycandy/</loc>
+    <loc>https://dogoodscience.biodiv.tw/2016/04/21/2017.happybdaycandy/</loc>
     
     <lastmod>2022-09-11</lastmod>
     
@@ -38,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://dogoodscience.biodiv.tw/2016/04/21/2017.happybdaycandy/</loc>
+    <loc>https://dogoodscience.biodiv.tw/2015/04/16/2015.happybdaycandy/</loc>
     
     <lastmod>2022-09-11</lastmod>
     
@@ -156,6 +165,15 @@
   
   <url>
     <loc>https://dogoodscience.biodiv.tw/2021/04/16/2021.happybdaycandy/</loc>
+    
+    <lastmod>2022-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dogoodscience.biodiv.tw/2015/08/31/advicetostudents/</loc>
     
     <lastmod>2022-08-30</lastmod>
     
@@ -290,6 +308,15 @@
   </url>
   
   <url>
+    <loc>https://dogoodscience.biodiv.tw/2015/02/24/pilife1stday/</loc>
+    
+    <lastmod>2022-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://dogoodscience.biodiv.tw/2019/05/08/pitenured/</loc>
     
     <lastmod>2022-08-30</lastmod>
@@ -307,28 +334,10 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://dogoodscience.biodiv.tw/2015/02/24/pilife1stday/</loc>
-    
-    <lastmod>2022-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dogoodscience.biodiv.tw/2015/08/31/advicetostudents/</loc>
-    
-    <lastmod>2022-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://dogoodscience.biodiv.tw/</loc>
-    <lastmod>2022-09-23</lastmod>
+    <lastmod>2022-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -336,21 +345,21 @@
   
   <url>
     <loc>https://dogoodscience.biodiv.tw/tags/bday/</loc>
-    <lastmod>2022-09-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dogoodscience.biodiv.tw/tags/%E5%AF%A6%E9%A9%97%E5%AE%A4/</loc>
-    <lastmod>2022-09-23</lastmod>
+    <lastmod>2022-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dogoodscience.biodiv.tw/tags/blog/</loc>
-    <lastmod>2022-09-23</lastmod>
+    <lastmod>2022-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dogoodscience.biodiv.tw/tags/%E5%AF%A6%E9%A9%97%E5%AE%A4/</loc>
+    <lastmod>2022-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -359,28 +368,28 @@
   
   <url>
     <loc>https://dogoodscience.biodiv.tw/categories/Candy%E7%94%9F%E6%97%A5%E5%BF%AB%E6%A8%82/</loc>
-    <lastmod>2022-09-23</lastmod>
+    <lastmod>2022-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dogoodscience.biodiv.tw/categories/%E7%A0%94%E7%A9%B6%E7%9A%84%E5%BF%83%E8%B7%AF%E6%AD%B7%E7%A8%8B/</loc>
-    <lastmod>2022-09-23</lastmod>
+    <lastmod>2022-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dogoodscience.biodiv.tw/categories/%E5%9F%BA%E5%9B%A0%E9%AB%94%E5%AD%B8%E7%9A%84%E7%89%87%E6%AE%B5/</loc>
-    <lastmod>2022-09-23</lastmod>
+    <lastmod>2022-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dogoodscience.biodiv.tw/categories/Lab-life/</loc>
-    <lastmod>2022-09-23</lastmod>
+    <lastmod>2022-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
