@@ -11,15 +11,6 @@
   </url>
   
   <url>
-    <loc>https://dogoodscience.biodiv.tw/2022/09/24/pi9yearsbepositive.md.zz/</loc>
-    
-    <lastmod>2023-12-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://dogoodscience.biodiv.tw/2023/04/16/2023.happybdaycandy/</loc>
     
     <lastmod>2023-04-16</lastmod>
@@ -387,14 +378,14 @@
   </url>
   
   <url>
-    <loc>https://dogoodscience.biodiv.tw/tags/blog/</loc>
+    <loc>https://dogoodscience.biodiv.tw/tags/%E5%AF%A6%E9%A9%97%E5%AE%A4/</loc>
     <lastmod>2023-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://dogoodscience.biodiv.tw/tags/%E5%AF%A6%E9%A9%97%E5%AE%A4/</loc>
+    <loc>https://dogoodscience.biodiv.tw/tags/blog/</loc>
     <lastmod>2023-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
