@@ -58,7 +58,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"dogoodscience.biodiv.tw","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"UA-239315403-2","gtag":"G-CRBDCYFJ78","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"dogoodscience.biodiv.tw","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"UA-239315403-2","tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"gtag":"G-CRBDCYFJ78"},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -72,28 +72,16 @@
   
 
   
-    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
     <script async>
       if (!Fluid.ctx.dnt) {
-        Fluid.utils.createScript('https://www.google-analytics.com/analytics.js', function() {
-          window.ga = window.ga || function() { (ga.q = ga.q || []).push(arguments) };
-          ga.l = +new Date;
-          ga('create', 'UA-239315403-2', 'auto');
-          ga('send', 'pageview');
-        });
-      }
-    </script>
-  
-
-  
-    <!-- Google gtag.js -->
-    <script async>
-      if (!Fluid.ctx.dnt) {
-        Fluid.utils.createScript('https://www.googletagmanager.com/gtag/js?id=G-CRBDCYFJ78', function() {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
+          function gtag() {
+            dataLayer.push(arguments);
+          }
           gtag('js', new Date());
-          gtag('config', 'G-CRBDCYFJ78');
+          gtag('config', '');
         });
       }
     </script>
@@ -142,9 +130,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
-                首頁
+                <span>首頁</span>
               </a>
             </li>
           
@@ -154,9 +142,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/">
+              <a class="nav-link" href="/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
-                歸檔
+                <span>歸檔</span>
               </a>
             </li>
           
@@ -166,9 +154,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/">
+              <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
-                分類
+                <span>分類</span>
               </a>
             </li>
           
@@ -178,9 +166,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/">
+              <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
-                關於
+                <span>關於</span>
               </a>
             </li>
           
@@ -188,15 +176,16 @@
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+              <i class="iconfont icon-search"></i>
             </a>
           </li>
           
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
           </li>
         
       </ul>
@@ -255,12 +244,12 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2024/05/16/2024.onmakingchoices/" target="_self">
           如何在求學中做選擇
         </a>
-      </h1>
+      </h2>
 
       
       <a class="index-excerpt " href="/2024/05/16/2024.onmakingchoices/" target="_self">
@@ -322,12 +311,12 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2024/04/16/2024.happybdaycandy/" target="_self">
           老婆生日快樂！平行宇宙 [2024]
         </a>
-      </h1>
+      </h2>
 
       
       <a class="index-excerpt " href="/2024/04/16/2024.happybdaycandy/" target="_self">
@@ -389,12 +378,12 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2024/02/01/2024.brc20yranniversary/" target="_self">
           中心20週年-中心的未來演講稿
         </a>
-      </h1>
+      </h2>
 
       
       <a class="index-excerpt " href="/2024/02/01/2024.brc20yranniversary/" target="_self">
@@ -456,12 +445,12 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2024/01/02/pi9years/" target="_self">
           實驗室第九年-重新開始一個實驗室？
         </a>
-      </h1>
+      </h2>
 
       
       <a class="index-excerpt " href="/2024/01/02/pi9years/" target="_self">
@@ -523,12 +512,12 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2023/12/15/advicetopostdoc/" target="_self">
           給要找博士後研究的一些建議 - 擁抱現實和夢想
         </a>
-      </h1>
+      </h2>
 
       
       <a class="index-excerpt " href="/2023/12/15/advicetopostdoc/" target="_self">
@@ -590,12 +579,12 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2023/04/16/2023.happybdaycandy/" target="_self">
           老婆生日快樂！chatGPT version [2023]
         </a>
-      </h1>
+      </h2>
 
       
       <a class="index-excerpt " href="/2023/04/16/2023.happybdaycandy/" target="_self">
@@ -657,12 +646,12 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2022/12/19/pipromoted/" target="_self">
           副升研究員的心路歷程
         </a>
-      </h1>
+      </h2>
 
       
       <a class="index-excerpt " href="/2022/12/19/pipromoted/" target="_self">
@@ -724,12 +713,12 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2022/09/24/pi8yearsnew/" target="_self">
           實驗室第八年 - 接受與重新計劃
         </a>
-      </h1>
+      </h2>
 
       
       <a class="index-excerpt " href="/2022/09/24/pi8yearsnew/" target="_self">
@@ -791,12 +780,12 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2022/08/27/2022.newblog/" target="_self">
           新的網誌-新的開始
         </a>
-      </h1>
+      </h2>
 
       
       <a class="index-excerpt " href="/2022/08/27/2022.newblog/" target="_self">
@@ -837,12 +826,12 @@
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/2022/04/16/2022.happybdaycandy/" target="_self">
           老婆生日快樂！喜歡妳的100個理由 [2022]
         </a>
-      </h1>
+      </h2>
 
       
       <a class="index-excerpt " href="/2022/04/16/2022.happybdaycandy/" target="_self">
