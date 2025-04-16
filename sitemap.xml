@@ -4,7 +4,7 @@
   <url>
     <loc>https://dogoodscience.biodiv.tw/2025/04/16/2025.happybdaycandy/</loc>
     
-    <lastmod>2025-04-15</lastmod>
+    <lastmod>2025-04-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -471,13 +471,6 @@
   </url>
   
   <url>
-    <loc>https://dogoodscience.biodiv.tw/categories/Lab-life/</loc>
-    <lastmod>2025-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://dogoodscience.biodiv.tw/categories/%E7%A0%94%E7%A9%B6%E7%9A%84%E5%BF%83%E8%B7%AF%E6%AD%B7%E7%A8%8B/</loc>
     <lastmod>2025-04-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -486,6 +479,13 @@
   
   <url>
     <loc>https://dogoodscience.biodiv.tw/categories/%E5%9F%BA%E5%9B%A0%E9%AB%94%E5%AD%B8%E7%9A%84%E7%89%87%E6%AE%B5/</loc>
+    <lastmod>2025-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://dogoodscience.biodiv.tw/categories/Lab-life/</loc>
     <lastmod>2025-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
